@@ -1,5 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+import { Inter } from "next/font/google";
+import clsx from "clsx";
+import Header from "~/components/Header";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-black text-neutral-100">
-      <body className="antialiased">
+    <html
+      lang="en"
+      className={clsx("bg-black text-neutral-100", inter.className)}
+    >
+      <body className={clsx("antialiased", inter.className)}>
+        <Header />
         {children}
         <Analytics />
       </body>
