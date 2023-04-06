@@ -23,7 +23,7 @@ export default function Header() {
     pathname = "/blog";
   }
   return (
-    <header className="flex items-center justify-between p-4 text-lg md:p-6 md:text-2xl">
+    <header className="flex items-center justify-between px-4 py-6 text-lg md:p-6 md:text-2xl">
       <Link href="/" className="pb-1 text-lg md:text-2xl">
         Sameer Jadav
       </Link>

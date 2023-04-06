@@ -9,6 +9,21 @@
   scroll-behavior: smooth;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.375em;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-myGray;
+  border-radius: 0.25em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 /* 
 These utility classes will be grouped together in a separate layer,
 which makes it easier to optimize your styles by selectively including only the layers
@@ -16,7 +31,7 @@ you need in your final CSS file.
 */
 @layer utilities {
   .desktop-min-height {
-    min-height: calc(100vh - 84px);
+    min-height: calc(100vh - 110px);
   }
   .mobile-min-height {
     min-height: calc(100vh - 65px);
