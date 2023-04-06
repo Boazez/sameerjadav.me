@@ -23,9 +23,9 @@ export default function Header() {
     pathname = "/blog";
   }
   return (
-    <header className="flex items-center justify-between p-4 text-lg font-light md:p-6 md:text-2xl">
-      <Link href="/">
-        <h1 className="pb-1">Sameer Jadav</h1>
+    <header className="flex items-center justify-between p-4 text-lg md:p-6 md:text-2xl">
+      <Link href="/" className="pb-1 text-lg md:text-2xl">
+        Sameer Jadav
       </Link>
       <nav className="flex items-center gap-4 md:gap-6 lg:gap-8">
         {Object.entries(navItems).map(([path, { name }]) => {
@@ -36,7 +36,7 @@ export default function Header() {
               key={path}
               href={path}
               className={clsx("pb-1 capitalize transition-all", {
-                "text-neutral-400 hover:text-neutral-100": !isActive,
+                "text-myGray hover:text-white": !isActive,
                 "border-b": isActive,
               })}
             >

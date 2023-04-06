@@ -1,11 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import clsx from "clsx";
 import Header from "~/components/Header";
 
-const inter = Inter({
-  subsets: ["latin"],
+const neue = localFont({
+  src: "../../public/fonts/NeueHaasUnica-ExtraLight.woff2",
+  weight: "300",
+  variable: "--font-neue",
   display: "swap",
 });
 
@@ -20,11 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={clsx("bg-black text-neutral-100", inter.className)}
-    >
-      <body className={clsx("antialiased", inter.className)}>
+    <html lang="en" className={clsx("bg-black text-white", neue.variable)}>
+      <body className="antialiased">
         <Header />
         {children}
         <Analytics />
