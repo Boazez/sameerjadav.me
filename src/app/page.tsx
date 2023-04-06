@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Star2 } from "~/components/Icons";
+import Image from "next/image";
+import { ArrowIcon, GitHubIcon, Star2 } from "~/components/Icons";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-prose text-xl md:text-2xl">
+      <section className="mx-auto mb-16 max-w-prose text-xl md:text-2xl">
         <div className="space-y-3 md:space-y-4">
           <h2 className="uppercase text-myGray">info about me</h2>
           <p>
@@ -50,18 +51,132 @@ export default function Home() {
           <p>
             My ultimate goal is to become a solid full-stack developer with the
             level of expertise you'd expect from a top-tier frontend developer,
-            as showcased on Awwward. As of now, I work as a freelance developer
-            and I take pride in my strong command of HTML, CSS/Tailwindcss, and
-            JavaScript/TypeScript.
+            as showcased on{" "}
+            <a
+              href="https://www.awwwards.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" border-b border-dotted hover:border-solid"
+            >
+              Awwward
+            </a>
+            . As of now, I work as a freelance developer and I take pride in my
+            strong command of HTML, CSS/Tailwindcss, and JavaScript/TypeScript.
           </p>
           <p>
             For my front-end projects, I love working with Next.js and
-            Tailwindcss, while for full-stack development, I prefer the T3
+            Tailwindcss, while for full-stack development, I prefer the{" "}
+            <a
+              href="https://create.t3.gg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" border-b border-dotted hover:border-solid"
+            >
+              T3
+            </a>{" "}
             stack. I stay up to date with the latest technologies and trends in
             the constantly evolving world of programming to enhance my skills
             and stay ahead of the game. Let's work together to create innovative
             and dynamic websites that will leave a lasting impression.
           </p>
+        </div>
+      </section>
+
+      <section className="mx-auto mb-16 max-w-prose text-xl md:text-2xl">
+        <h2 className="mb-2 uppercase text-myGray">projects</h2>
+        <div className="flex flex-col gap-4 md:flex-row">
+          {/* Portfolio */}
+          <div className="flex-1 rounded-md border border-myGray p-3">
+            <div className="mb-4">
+              <Image
+                src="/portfolio.png"
+                alt="Guestbook App screenshot"
+                className="h-full w-full rounded-md border border-myGray object-cover"
+                width={1366}
+                height={10}
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h3 className="mb-2 text-2xl md:text-3xl">Sameerjadav.me</h3>
+              <p className="mb-2 text-neutral-300">
+                My personal portfolio website. The website is built with
+                Next.js, Contentlayer, which allows for easy conversion of mdx
+                files to HTML with TypeScript typechecking, Tailwind CSS for
+                styling. This website was designed and built entirely by me.
+              </p>
+              <div className="flex flex-col gap-2 md:flex-row">
+                <a
+                  href="https://github.com/SameerJadav/sameerjadav.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
+                >
+                  <div className="flex items-center justify-center gap-2 rounded-md py-2">
+                    <GitHubIcon />
+                    <span>GitHub</span>
+                  </div>
+                </a>
+                <a
+                  href="https://sameerjadav.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
+                >
+                  <div className="flex items-center justify-center gap-2 rounded-md py-2">
+                    <ArrowIcon />
+                    <span>Live</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Guestbook */}
+          <div className="flex-1 rounded-md border border-myGray p-3">
+            <div className="mb-4">
+              <Image
+                src="/guestbook.png"
+                alt="Guestbook App screenshot"
+                className="h-full w-full rounded-md border border-myGray object-cover"
+                width={1366}
+                height={768}
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h3 className="mb-2 text-2xl md:text-3xl">Guestbook</h3>
+              <p className="mb-2 text-neutral-300">
+                Guestbook app built with Next.js, Prisma, Supabase, tRPC, and
+                Clerk for user management. Users can sign in and leave messages,
+                which are stored in a PostgreSQL database. Clerk handles user
+                authentication and authorization.
+              </p>
+              <div className="flex flex-col gap-2 md:flex-row">
+                <a
+                  href="https://github.com/SameerJadav/guestbook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
+                >
+                  <div className="flex items-center justify-center gap-2 rounded-md py-2">
+                    <GitHubIcon />
+                    <span>GitHub</span>
+                  </div>
+                </a>
+                <a
+                  href="https://guestbook.sameerjadav.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
+                >
+                  <div className="flex items-center justify-center gap-2 rounded-md py-2">
+                    <ArrowIcon />
+                    <span>Live</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
