@@ -9,6 +9,14 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-neue)"],
       },
+      typography: {
+        quoteless: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:first-of-type::after": { content: "none" },
+          },
+        },
+      },
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
         tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
@@ -18,5 +26,5 @@ module.exports = {
   future: {
     hoverOnlyWhenSupported: true,
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -1,7 +1,8 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { allPosts } from 'contentlayer/generated';
-import { getMDXComponent } from 'next-contentlayer/hooks';
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { allPosts } from "contentlayer/generated";
+import Balancer from "react-wrap-balancer";
+import { getMDXComponent } from "next-contentlayer/hooks";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return allPosts.map((post) => {
@@ -39,9 +40,15 @@ export default async function BlogPost({
   const Content = getMDXComponent(post.body.code);
 
   return (
-    <section>
-      <h1>{post.title}</h1>
-      <Content />
+    <section className="p-4">
+      <div className="mx-auto mb-10 max-w-[816px] md:mb-14 lg:my-14">
+        <h1 className="w-full text-3xl font-black md:text-6xl lg:text-7xl">
+          <Balancer>{post.title}</Balancer>
+        </h1>
+      </div>
+      <article className="prose prose-invert prose-quoteless mx-auto mb-16 w-max md:prose-lg lg:prose-xl">
+        <Content />
+      </article>
     </section>
   );
 }
