@@ -24,7 +24,7 @@ export default function Header() {
   }
   return (
     <header className="flex items-center justify-between px-4 py-6 text-lg md:p-6 md:text-2xl">
-      <Link href="/" className="pb-1 text-lg md:text-2xl">
+      <Link href="/" className="border-b border-black pb-1">
         Sameer Jadav
       </Link>
       <nav className="flex items-center gap-4 md:gap-6 lg:gap-8">
@@ -35,10 +35,13 @@ export default function Header() {
             <Link
               key={path}
               href={path}
-              className={clsx("pb-1 capitalize transition-all", {
-                "text-myGray hover:text-white": !isActive,
-                "border-b": isActive,
-              })}
+              className={clsx(
+                "border-b border-black pb-1 capitalize transition-all",
+                {
+                  "text-myGray hover:border-white hover:text-white": !isActive,
+                  "border-white": isActive,
+                }
+              )}
             >
               {name}
             </Link>

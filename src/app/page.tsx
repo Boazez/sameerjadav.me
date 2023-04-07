@@ -5,12 +5,10 @@ import { ArrowIcon, GitHubIcon, Star2 } from "~/components/Icons";
 export default function Home() {
   return (
     <main className="p-4 md:p-6">
-      <section className="mobile-min-height lg:desktop-min-height flex flex-col justify-center">
-        <div className="mx-auto my-16 max-w-max lg:my-10">
-          <h1 className="w-full text-center text-5xl uppercase md:text-8xl lg:text-9xl">
-            sameer jadav
-          </h1>
-          <div className="flex w-full flex-col items-center text-center text-5xl uppercase md:text-8xl lg:text-9xl">
+      <section className="mobile-min-height lg:desktop-min-height flex flex-col justify-center text-5xl md:text-8xl lg:text-9xl">
+        <div className="mx-auto mb-20 max-w-max uppercase lg:my-10">
+          <h1 className="w-full text-center">sameer jadav</h1>
+          <div className="flex w-full flex-col items-center text-center">
             <div className="flex items-center gap-4 lg:gap-8">
               <div className="-mt-3 md:-mt-6 lg:-mt-10">
                 <Star2 />
@@ -26,7 +24,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="mx-auto mb-16 text-center text-xl lg:hidden">
+        <p className="mx-auto mb-20 text-center text-xl lg:hidden">
           From India, passionated about creating memorable projects
         </p>
 

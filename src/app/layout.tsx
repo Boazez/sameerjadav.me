@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import clsx from "clsx";
 import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
 const neue = localFont({
   src: "../../public/fonts/NeueHaasUnica-ExtraLight.woff2",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
