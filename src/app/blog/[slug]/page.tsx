@@ -26,7 +26,7 @@ export async function generateMetadata({
     description: post.description,
     keywords: post.keywords,
     twitter: {
-      images: [`https://leerob.io/api/og?title=${post.title}`],
+      images: [`https://sameerjadav-me.vercel.app/api/og?title=${post.title}`],
     },
   };
 }
