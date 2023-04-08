@@ -21,23 +21,21 @@ export default async function handler(req: NextRequest) {
           height: "100%",
           width: "100%",
           display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "center",
           backgroundImage: "url(https://sameerjadav-me.vercel.app/og-bg.png)",
         }}
       >
         <div
           style={{
-            marginLeft: 190,
-            marginRight: 190,
-            display: "flex",
-            fontSize: 130,
-            fontFamily: "Kaisei Tokumin",
-            letterSpacing: "-0.05em",
-            fontStyle: "normal",
             color: "white",
-            lineHeight: "120px",
+            fontFamily: "Kaisei Tokumin",
+            fontSize: 48,
+            fontWeight: 700,
+            fontStyle: "normal",
+            marginLeft: 70,
+            marginRight: 550,
+            paddingTop: 80,
+            display: "flex",
+            lineHeight: 1.125,
             whiteSpace: "pre-wrap",
           }}
         >
@@ -46,8 +44,8 @@ export default async function handler(req: NextRequest) {
       </div>
     ),
     {
-      width: 1920,
-      height: 1080,
+      width: 1200,
+      height: 600,
       fonts: [
         {
           name: "Kaisei Tokumin",
