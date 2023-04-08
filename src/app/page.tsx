@@ -92,7 +92,6 @@ export default function Home() {
                 className="h-full w-full rounded-md border border-myGray object-cover"
                 width={1366}
                 height={10}
-                loading="lazy"
               />
             </div>
             <div>
@@ -138,7 +137,6 @@ export default function Home() {
                 className="h-full w-full rounded-md border border-myGray object-cover"
                 width={1366}
                 height={768}
-                loading="lazy"
               />
             </div>
             <div>

@@ -1,8 +1,8 @@
-export function Star2() {
+export function Star2(props: { size?: number }) {
   return (
     <svg
-      width="50"
-      height="50"
+      width={props.size ?? 50}
+      height={props.size ?? 50}
       viewBox="0 0 96 108"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

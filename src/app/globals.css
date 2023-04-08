@@ -38,6 +38,11 @@ you need in your final CSS file.
   }
 }
 
+/* Tailwind typography */
+.prose a {
+  @apply border-b border-dotted no-underline decoration-white transition-all hover:border-solid;
+}
+
 .prose {
   width: auto;
   max-width: 77ch;
@@ -65,8 +70,7 @@ input[type="email"] {
   appearance: none;
 }
 
-/* Rehype */
-
+/* Rehype pretty code */
 [data-rehype-pretty-code-fragment] code {
   @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0 text-sm text-black;
   counter-reset: line;
