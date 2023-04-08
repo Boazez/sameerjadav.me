@@ -25,6 +25,9 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    twitter: {
+      images: [`https://leerob.io/api/og?title=${post.title}`],
+    },
   };
 }
 
