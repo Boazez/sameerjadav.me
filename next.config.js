@@ -13,6 +13,14 @@ const nextConfig = {
       return [];
     }
   },
+  headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+    ];
+  },
 };
 
 module.exports = withContentlayer(nextConfig);
