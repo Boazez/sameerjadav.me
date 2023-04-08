@@ -104,16 +104,14 @@ To add a sign-in button to your app, start by creating a new client component sp
 import { SignInButton, useUser, SignOutButton } from "@clerk/nextjs";
 
 export default function SignIn() {
-  const user = useUser();
-
-  //   console.log("user", user);
+  const { isSignedIn, user } = useUser();
 
   return (
     <main>
-      {!user.isSignedIn && <SignInButton mode="modal" />}
-      {!!user.isSignedIn && (
+      {!isSignedIn && <SignInButton mode="modal" />}
+      {isSignedIn && (
         <>
-          <p>Welcome, {user.user.username}!</p>
+          <p className="mb-2">Welcome, {user.username}!</p>
           <SignOutButton />
         </>
       )}
