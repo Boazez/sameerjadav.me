@@ -175,6 +175,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="mx-auto mb-16 max-w-prose text-center text-xl md:text-2xl">
+        <p className="uppercase text-myGray">What's next</p>
+        <h2 className="my-10 text-2xl uppercase md:text-5xl lg:text-6xl">
+          Let's create something awesome together
+        </h2>
+        <p className="mb-10">
+          If you're looking for a freelancer for your project, I am available
+          for hire. Please don't hesitate to contact me if you need any help
+          with your project. Additionally, if you're interested in offering me
+          an internship or job opportunity, feel free to check out my{" "}
+          <a
+            href="https://drive.google.com/file/d/1Wy311PqSl4gJAJ2Fz2PrUdiSvdoJVxg8/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-b border-dotted hover:border-solid"
+          >
+            resume
+          </a>
+          .
+        </p>
+        <a
+          href="mailto:sameerjadav001@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-md border border-myGray px-8 py-4 transition-all hover:border-white"
+        >
+          Say hello
+        </a>
+      </section>
     </main>
   );
 }
