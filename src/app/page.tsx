@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { ArrowIcon, GitHubIcon, Star2 } from "~/components/Icons";
+import { ExternalLinkIcon, GitHubIcon, Star } from "~/components/Icons";
 
 export default function Home() {
   return (
@@ -11,14 +11,14 @@ export default function Home() {
           <div className="flex w-full flex-col items-center text-center">
             <div className="flex items-center gap-4 lg:gap-8">
               <div className="-mt-3 md:-mt-6 lg:-mt-10">
-                <Star2 />
+                <Star />
               </div>
               <p>front-end</p>
             </div>
             <div className="flex items-center gap-4 lg:gap-8">
               <p>developer</p>
               <div className="-mt-3 md:-mt-6 lg:-mt-10">
-                <Star2 />
+                <Star />
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
                   className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
                 >
                   <div className="flex items-center justify-center gap-2 rounded-md py-2">
-                    <GitHubIcon />
+                    <GitHubIcon size={21} />
                     <span>GitHub</span>
                   </div>
                 </a>
@@ -121,7 +121,7 @@ export default function Home() {
                   className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
                 >
                   <div className="flex items-center justify-center gap-2 rounded-md py-2">
-                    <ArrowIcon />
+                    <ExternalLinkIcon size={21} />
                     <span>Live</span>
                   </div>
                 </a>
@@ -155,7 +155,7 @@ export default function Home() {
                   className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
                 >
                   <div className="flex items-center justify-center gap-2 rounded-md py-2">
-                    <GitHubIcon />
+                    <GitHubIcon size={21} />
                     <span>GitHub</span>
                   </div>
                 </a>
@@ -166,7 +166,7 @@ export default function Home() {
                   className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
                 >
                   <div className="flex items-center justify-center gap-2 rounded-md py-2">
-                    <ArrowIcon />
+                    <ExternalLinkIcon size={21} />
                     <span>Live</span>
                   </div>
                 </a>

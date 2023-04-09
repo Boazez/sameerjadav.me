@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { allPosts } from "contentlayer/generated";
 import Link from "next/link";
-import { Star2 } from "~/components/Icons";
+import { Star } from "~/components/Icons";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
               href={`/blog/${post.url}`}
               className="flex items-start gap-2 hover:underline hover:underline-offset-8 md:items-center md:gap-4"
             >
-              <Star2 size={35} />
+              <Star size={35} />
               <p>{post.title}</p>
             </Link>
           ))}
