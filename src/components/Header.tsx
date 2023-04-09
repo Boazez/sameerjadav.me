@@ -11,9 +11,6 @@ const navItems = {
   "/blog": {
     name: "blog",
   },
-  "/contact": {
-    name: "contact",
-  },
 };
 
 export default function Header() {
@@ -23,7 +20,7 @@ export default function Header() {
     pathname = "/blog";
   }
   return (
-    <header className="flex items-center justify-between px-4 py-6 text-lg font-semibold md:p-6 md:text-2xl">
+    <header className="sticky top-0 flex items-center justify-between px-4 py-6 text-lg font-semibold backdrop-blur-sm md:p-6 md:text-2xl">
       <Link href="/" className="border-b border-black pb-1">
         Sameer Jadav
       </Link>
