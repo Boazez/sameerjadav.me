@@ -3,6 +3,36 @@ import { allPosts } from "contentlayer/generated";
 import Link from "next/link";
 import { Star } from "~/components/Icons";
 
+export const metadata = {
+  title: {
+    default: "Blog",
+    template: "%s | Sameer Jadav",
+  },
+  description:
+    "Here I'll be sharing valuable insights, useful tips, and informative tutorials on the art of website development, as well as my personal reflections on life.",
+  keywords: [
+    "Web development",
+    "Blog",
+    "Sameer Jadav",
+    "Portfolio",
+    "Front-end developer",
+    "Freelance developer",
+    "Full-stack developer",
+    "Next.js",
+  ],
+  openGraph: {
+    title: "Blog",
+    description:
+      "Here I'll be sharing valuable insights, useful tips, and informative tutorials on the art of website development, as well as my personal reflections on life.",
+    url: "https://sameerjadav.me/blog",
+  },
+  twitter: {
+    title: "Blog",
+    description:
+      "Here I'll be sharing valuable insights, useful tips, and informative tutorials on the art of website development, as well as my personal reflections on life.",
+  },
+};
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-[816px] p-4 md:p-6">

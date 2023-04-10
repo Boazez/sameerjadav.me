@@ -25,8 +25,15 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://sameerjadav.me/blog/${post.url}`,
+    },
     twitter: {
-      images: [`https://sameerjadav-me.vercel.app/api/og?title=${post.title}`],
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
     },
   };
 }
