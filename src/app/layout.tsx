@@ -6,7 +6,7 @@ import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 
 const neue = localFont({
-  src: "../../public/fonts/NeueHaasUnica-ExtraLight.woff2",
+  src: "../../public/fonts/NeueHaasUnica-Light.woff2",
   weight: "300",
   variable: "--font-neue",
   display: "swap",

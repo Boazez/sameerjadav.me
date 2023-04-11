@@ -13,10 +13,10 @@ export default function Home() {
               <div className="-mt-3 md:-mt-6 lg:-mt-10">
                 <Star />
               </div>
-              <p>front-end</p>
+              <p className="text-white">front-end</p>
             </div>
             <div className="flex items-center gap-4 lg:gap-8">
-              <p>developer</p>
+              <p className="text-white">developer</p>
               <div className="-mt-3 md:-mt-6 lg:-mt-10">
                 <Star />
               </div>

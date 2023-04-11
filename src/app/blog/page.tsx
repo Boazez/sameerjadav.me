@@ -36,7 +36,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="mx-auto max-w-[816px] p-4 md:p-6">
-      <h1 className="mb-8 text-center text-5xl uppercase md:text-8xl lg:my-10 lg:text-9xl">
+      <h1 className="mb-8 text-center text-5xl uppercase md:text-7xl lg:my-10 lg:text-8xl">
         My Journal
       </h1>
       <p className="mb-10 text-center text-xl md:text-2xl">

@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+p {
+  @apply text-neutral-100;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 0.375em;
