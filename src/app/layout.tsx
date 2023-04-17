@@ -22,11 +22,6 @@ export const metadata = {
   authors: [{ name: "Sameer Jadav", url: "https://sameerjadav.me" }],
   creator: "Sameer Jadav",
   publisher: "Sameer Jadav",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
   robots: {
     index: true,
     follow: true,
@@ -60,6 +55,7 @@ export const metadata = {
     description:
       "Frontend developer with a passion for learning and building awesome projects. Expanding skillset with full stack development for high-performance apps.",
     creator: "@SameerJadav_",
+    site: "@SameerJadav_",
     images: ["https://sameerjadav.me/og.png"],
   },
   icons: {
