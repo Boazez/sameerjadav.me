@@ -10,16 +10,7 @@ export const metadata = {
   },
   description:
     "Here I'll be sharing valuable insights, useful tips, and informative tutorials on the art of website development, as well as my personal reflections on life.",
-  keywords: [
-    "Web development",
-    "Blog",
-    "Sameer Jadav",
-    "Portfolio",
-    "Front-end developer",
-    "Freelance developer",
-    "Full-stack developer",
-    "Next.js",
-  ],
+
   openGraph: {
     title: "Blog",
     description:

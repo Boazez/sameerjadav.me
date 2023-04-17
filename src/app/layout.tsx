@@ -19,14 +19,6 @@ export const metadata = {
   },
   description:
     "Frontend developer with a passion for learning and building awesome projects. Expanding skillset with full stack development for high-performance apps.",
-  keywords: [
-    "Sameer Jadav",
-    "Portfolio",
-    "Front-end developer",
-    "Freelance developer",
-    "Full-stack developer",
-    "Next.js",
-  ],
   authors: [{ name: "Sameer Jadav", url: "https://sameerjadav.me" }],
   creator: "Sameer Jadav",
   publisher: "Sameer Jadav",

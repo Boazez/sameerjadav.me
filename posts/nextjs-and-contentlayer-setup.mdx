@@ -1,7 +1,6 @@
 ---
 title: Simplify Content Management with Next.js & Contentlayer
 description: Streamline content management with Contentlayer & Next.js 13. Automate content conversion, setup a Next.js app, and define Post schema for easy data management.
-keywords: Next.js 13, Contentlayer, blog website, content management, content preprocessor, content management system, content management tool, tailwindcss, typescript, nextjs 13 + contentlayer, javascript
 date: February 17, 2023
 ---
 
@@ -85,10 +84,6 @@ const Post = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
-    keywords: {
-      type: "string",
-      required: true,
-    },
     date: {
       type: "string",
       required: true,
@@ -127,7 +122,6 @@ For example, here is a sample post titled what-is-contentlayer.md located in the
 ---
 title: "What is Contentlayer?"
 description: "Demo description"
-keywords: "content, preprocessor, type-safe"
 date: "2022-02-22"
 ---
 
