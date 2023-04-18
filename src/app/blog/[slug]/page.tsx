@@ -28,11 +28,19 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       url: `https://sameerjadav.me/blog/${post.url}`,
+      images: [
+        {
+          url: "https://sameerjadav.me/og.png",
+          width: 1200,
+          height: 600,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: ["https://sameerjadav.me/og.png"],
     },
   };
 }

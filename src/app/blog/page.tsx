@@ -16,11 +16,19 @@ export const metadata = {
     description:
       "Here I'll be sharing valuable insights, useful tips, and informative tutorials on the art of website development, as well as my personal reflections on life.",
     url: "https://sameerjadav.me/blog",
+    images: [
+      {
+        url: "https://sameerjadav.me/og.png",
+        width: 1200,
+        height: 600,
+      },
+    ],
   },
   twitter: {
     title: "Blog",
     description:
       "Here I'll be sharing valuable insights, useful tips, and informative tutorials on the art of website development, as well as my personal reflections on life.",
+    images: ["https://sameerjadav.me/og.png"],
   },
 };
 
