@@ -54,7 +54,7 @@ export default function Home() {
               href="https://www.awwwards.com"
               target="_blank"
               rel="noopener noreferrer"
-              className=" border-b border-dotted hover:border-solid"
+              className="border-b border-dotted hover:border-solid"
             >
               Awwward
             </a>
@@ -82,9 +82,9 @@ export default function Home() {
 
       <section className="mx-auto mb-16 max-w-prose text-xl md:text-2xl">
         <h2 className="mb-2 uppercase text-myGray">projects</h2>
-        <div className="flex flex-col gap-4 md:flex-row">
+        <div className="grid gap-4 md:grid-cols-2">
           {/* Portfolio */}
-          <div className="flex-1 rounded-md border border-myGray p-3">
+          <div className="rounded-md border border-myGray p-3">
             <div className="mb-4">
               <Image
                 src="/portfolio.png"
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
           </div>
           {/* Guestbook */}
-          <div className="flex-1 rounded-md border border-myGray p-3">
+          <div className="rounded-md border border-myGray p-3">
             <div className="mb-4">
               <Image
                 src="/guestbook.png"
@@ -161,6 +161,58 @@ export default function Home() {
                 </a>
                 <a
                   href="https://guestbook.sameerjadav.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
+                >
+                  <div className="flex items-center justify-center gap-2 rounded-md py-2">
+                    <ExternalLinkIcon size={21} />
+                    <span>Live</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* QR Code Generator */}
+          <div className="rounded-md border border-myGray p-3">
+            <div className="mb-4">
+              <Image
+                src="/qrcode.png"
+                alt="QR code generator App screenshot"
+                className="h-full w-full rounded-md border border-myGray object-cover"
+                width={1366}
+                height={768}
+              />
+            </div>
+            <div>
+              <h3 className="mb-2 text-2xl md:text-3xl">QR Code Generator</h3>
+              <p className="mb-2 text-neutral-300">
+                Generate QR codes for any website instantly with this simple and
+                user-friendly QR code generator. This project is inspired by{" "}
+                <a
+                  href="https://dub.sh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b border-dotted hover:border-solid"
+                >
+                  dub
+                </a>
+                .
+              </p>
+              <div className="flex flex-col gap-2 md:flex-row">
+                <a
+                  href="https://github.com/SameerJadav/qrcode-generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
+                >
+                  <div className="flex items-center justify-center gap-2 rounded-md py-2">
+                    <GitHubIcon size={21} />
+                    <span>GitHub</span>
+                  </div>
+                </a>
+                <a
+                  href="https://qr.sameerjadav.me"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 rounded-md border border-myGray transition-all hover:border-white"
